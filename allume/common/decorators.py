@@ -1,8 +1,6 @@
 from functools import wraps
 from flask import jsonify, request
 from marshmallow import ValidationError
-from allume.common.model import Model
-
 
 
 def json_validate(schema_cls, many=False):

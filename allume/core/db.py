@@ -24,10 +24,3 @@ class DBAPI:
             self.session.connection.commit()
         self.session.__exit__(exec_type, exec_instance, traceback)
         return exec_instance is None
-
-    @staticmethod
-    def query_as_list(db, sql, params=None):
-        result = db.query(sql, params)
-        if result.count():
-            return [row for row in result]
-        return []	

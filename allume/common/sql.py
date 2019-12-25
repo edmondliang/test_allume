@@ -1,5 +1,4 @@
 import os
-from allume.common.model import Model
 from functools import lru_cache
 
 
