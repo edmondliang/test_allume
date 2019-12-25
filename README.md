@@ -1,7 +1,7 @@
 ### SETUP
 
 1. setup your postgres database
-2. create schemas by run the script in migration folder in your postgres server
+2. create schemas by running the scripts in migration folder in your postgres server
 3. setup your python environment
 ```
 pipenv install -d
