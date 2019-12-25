@@ -4,7 +4,7 @@
 2.create schemas by run the script in migration folder in your postgres server
 3.setup your python environment
 ```
-pipenv install
+pipenv install -d
 cp example.env .env
 # modify your .env
 cp example.flaskenv .flaskenv
