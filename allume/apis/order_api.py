@@ -25,7 +25,6 @@ def process_orders(orders, interactor_mapping={
         try:
             interactor_mapping.get(order.order_type).execute(order)
             result += [Model(order_id=order.order_id, succeed=1)]
-        except Exception as e:
-            print(e)
+        except Exception:
             result += [Model(order_id=order.order_id, succeed=0)]
     return result
